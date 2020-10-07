@@ -12,15 +12,18 @@ namespace Sweepstakes
         //implement dependency injection to utilize sweepstakes manager, document wehre I will be using Dependency and what benefits it add to structure
         //dependency injection will come from the simulation class when making a marketing firm manager. 
 
-        private ISweepstakesManager manager;
-        public SweepstakesStackManager sweepStack;
-        public SweepstakesQueueManager sweepQueue;
+        private ISweepstakesManager _manager;
+        
 
-
-        public MarketingFirm()
+        public MarketingFirm(ISweepstakesManager manager)
         {
-            sweepStack = new SweepstakesStackManager();
-            sweepQueue = new SweepstakesQueueManager();
+            _manager = manager;
+        }
+
+        public void CreatSweepstake(MarketingFirm marketingFirm)
+        {
+            
+
         }
     }
 }
