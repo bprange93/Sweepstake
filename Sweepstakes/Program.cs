@@ -10,6 +10,10 @@ namespace Sweepstakes
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Do you want a que or a stack?");
+
+            SweepstakesQueueManager thing = new SweepstakesQueueManager();
+            SweepstakesStackManager thing2 = new SweepstakesStackManager();
             Simulation sim1 = new Simulation();
             sim1.RunMain();
             //Console.ReadLine(contestant);
