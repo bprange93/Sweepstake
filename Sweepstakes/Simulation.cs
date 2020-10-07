@@ -29,9 +29,9 @@ namespace Sweepstakes
             Console.ReadLine();
         }
 
-        public void CreateMarketingFirmWithManager()
+        public void CreateMarketingFirmWithManager(ISweepstakesManager manager)
         {
-
+            MarketingFirm marketingFirm1 = new MarketingFirm(manager);
         }
     }
 }
