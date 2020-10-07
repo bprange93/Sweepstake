@@ -10,7 +10,8 @@ namespace Sweepstakes
     {
         static void Main(string[] args)
         {
-            Contestant contestant = new Contestant("Brandon", "Prange", "bprange93@gmail.com", 12345);
+            Simulation sim1 = new Simulation();
+            sim1.RunMain();
             //Console.ReadLine(contestant);
 
 
