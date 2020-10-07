@@ -10,16 +10,16 @@ namespace Sweepstakes
     {
         private Dictionary<int, Contestant> contestants;
         private string name;
-        public string Name { get; set; }
+        public string Name;
 
-        public Sweepstakes(string Name)
+        public Sweepstakes(string name)
         {
-            this.Name = name;
+            this.name = name;
             contestants = new Dictionary<int, Contestant>();
         }
 
                         //move to UserInterface
-        public void RegisterContestant(Contestant contestant) //Assingns contestant obj an int Key and adds the contestants registration
+        public void RegisterContestant(Contestant contestant) //Assingns contestant obj an int Key and adds the contestants registration to Dic
         {
             int registerNumber = contestants.Count + 1;
             contestants.Add(registerNumber, contestant);
