@@ -23,7 +23,13 @@ namespace Sweepstakes
         public void CreateSweepstake(string name)
         {
             Sweepstakes sweepstakes = new Sweepstakes(name);
+            _manager.InsertSweepstakes(sweepstakes);
+            
+        }
 
+        public void DeleteSweepstake()
+        {
+            _manager.GetSweepstakes();
         }
     }
 }
