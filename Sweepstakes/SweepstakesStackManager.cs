@@ -22,9 +22,9 @@ namespace Sweepstakes
             stack.Push(sweepstakes);
         }
 
-        public void GetSweepstakes()
+        public Sweepstakes GetSweepstakes()
         {
-            
+            return stack.Pop();
         }
     }
 }

@@ -22,9 +22,11 @@ namespace Sweepstakes
             queue.Enqueue(sweepstakes);
         }
 
-        public void GetSweepstakes()
+        public Sweepstakes GetSweepstakes()
         {
-
+            return queue.Dequeue();
         }
+
+         
     }
 }

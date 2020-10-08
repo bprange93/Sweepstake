@@ -47,7 +47,7 @@ namespace Sweepstakes
 
         public void PrintContestantInfo(Contestant contestant)
         {
-            
+            UserInterface.PrintContestantInfo(contestant, contestants); 
         }
 
         public int GetRandomNumber(int max)

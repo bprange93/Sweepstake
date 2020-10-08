@@ -21,9 +21,6 @@ namespace Sweepstakes
             this.EmailAddress = emailAddress;
             this.RegistrationNumber = registrationNumber;
         }
-        //public void NewContestant(IUserInterface contestant)
-        //{
-        //    Console.WriteLine("Thank you for putting your name in the contest!\n", contestant.FirstName);
-        //}
+        
     }
 }
