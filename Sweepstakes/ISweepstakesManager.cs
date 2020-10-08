@@ -8,6 +8,5 @@ namespace Sweepstakes
 {
     interface ISweepstakesManager
     {
-        //implement methods form here using Stack and Queue method
     }
 }
