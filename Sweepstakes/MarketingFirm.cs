@@ -20,7 +20,7 @@ namespace Sweepstakes
             _manager = manager;
         }
 
-        public void CreatSweepstake(string name)
+        public void CreateSweepstake(string name)
         {
             Sweepstakes sweepstakes = new Sweepstakes(name);
 
