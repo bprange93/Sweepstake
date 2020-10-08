@@ -20,9 +20,9 @@ namespace Sweepstakes
             _manager = manager;
         }
 
-        public void CreatSweepstake(MarketingFirm marketingFirm)
+        public void CreatSweepstake(string name)
         {
-            
+            Sweepstakes sweepstakes = new Sweepstakes(name);
 
         }
     }
