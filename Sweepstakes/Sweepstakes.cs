@@ -11,6 +11,7 @@ namespace Sweepstakes
         private Dictionary<int, Contestant> contestants;
         private string name;
         public string Name;
+        public Contestant contestWinner;
 
         public Sweepstakes(string name)
         {
@@ -27,10 +28,22 @@ namespace Sweepstakes
             Console.WriteLine($"{ contestants.Count} + {contestant.RegistrationNumber} + {contestant.FirstName}");
         }
 
-        //public Contestant PickWinner()
-        //{
-        //    return;
-        //}
+        public Contestant PickWinner()
+        {
+            
+            int winnersNumber = GetRandomNumber(contestants.Count + 1);
+            foreach (KeyValuePair<int, Contestant> winner in contestants)
+            {
+                if(winnersNumber == winner.Key)
+                {
+                    contestWinner = winner.Value;
+                    
+                }
+                
+            }
+            return contestWinner;
+
+        }
 
         public void PrintContestantInfo(Contestant contestant)
         {

@@ -16,7 +16,7 @@ namespace Sweepstakes
             SweepstakesStackManager thing2 = new SweepstakesStackManager();
             Simulation sim1 = new Simulation();
             sim1.RunMain();
-            //Console.ReadLine(contestant);
+            Console.ReadLine();
 
 
         }
